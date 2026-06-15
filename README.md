@@ -254,7 +254,7 @@ Phase 3 — Extend  (Optional)
 ## 👤 Author
 
 **สิริธร เค้าแดง**  
-Data scient
+Data science
 
 Cooperative Education @ **Botnoi Group**  
 2 มิถุนายน 2026 – 30 ตุลาคม 2026
