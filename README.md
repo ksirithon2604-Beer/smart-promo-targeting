@@ -133,12 +133,12 @@ smart-promo-targeting/
 ├── 📄 README.md                        ← คุณอยู่ที่นี่
 │
 ├── 📁 data/
-│   ├── raw/                            ← Mock CSV 5 ไฟล์ (ห้ามแก้ไข)
+│   ├── raw/                            ← Mock CSV 5 ไฟล์ (ห้ามแก้ไขเด็ดขาด!!)
 │   │   ├── sales_transaction.csv       (~3,000 transactions · 6 เดือน)
 │   │   ├── customer_master.csv         (500 customers)
-│   │   ├── promotion_master.csv        (10 promotions)
-│   │   ├── product_master.csv          (50 products)
-│   │   └── store_master.csv            (5 สาขา)
+│   │   └── promotion_master.csv        (10 promotions)
+│   │   
+│   │   
 │   └── processed/                      ← Cleaned data หลัง EDA
 │       ├── rfm_features.csv            ← RFM ที่คำนวณแล้ว
 │       └── transactions_with_segment.csv
