@@ -138,7 +138,6 @@ smart-promo-targeting/
 │   │   ├── customer_master.csv         (500 customers)
 │   │   └── promotion_master.csv        (10 promotions)
 │   │   
-│   │   
 │   └── processed/                      ← Cleaned data หลัง EDA
 │       ├── rfm_features.csv            ← RFM ที่คำนวณแล้ว
 │       └── transactions_with_segment.csv
