@@ -62,3 +62,10 @@
 | `Recency` | int64 | `12` | จำนวนวันที่เว้นว่างจากการซื้อครั้งล่าสุด นับถึงวันอัปเดตระบบ |
 | `Frequency` | int64 | `14` | จำนวนครั้งรวมทั้งหมดที่ลูกค้ามาซื้อสินค้าภายในรอบ 6 เดือน |
 | `Monetary` | float64 | `12450.50` | ยอดเงินสุทธิสะสมรวมทั้งหมดที่ลูกค้าจ่ายให้ร้านค้าจริง |
+
+## ⚠️ Known Data Quality Issues
+
+| Issue | ตาราง | ผลกระทบ | วิธีรับมือ |
+|-------|-------|---------|-----------|
+| promotion_id = NONE | sales_transaction | join กับ promo ไม่ได้ | filter ออกก่อน join |
+| ราคาไม่ตรง product_master | product vs transaction | revenue ผิด | ใช้ subtotal จาก transaction เสมอ |
