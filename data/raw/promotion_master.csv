@@ -1,5 +1,0 @@
-promotion_id,promo_type,discount_value,start_date,end_date,target_segment
-P_NEWYEAR,percent_discount,10,2023-12-15,2024-01-15,All
-P_MIDYEAR,fixed_discount,200,2024-06-01,2024-06-30,All
-P_FLASH,percent_discount,15,2024-03-01,2024-03-03,All
-P_CHAMPION,percent_discount,20,2024-01-01,2024-12-31,Champion
