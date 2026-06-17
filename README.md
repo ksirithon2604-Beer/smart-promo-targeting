@@ -21,11 +21,11 @@
 **Final Output:** Next-Best-Offer Table
 
 ```
-customer_id │ segment   │ predicted_spend_30d │ promotion_id │ redeem_probability │ action
-────────────┼───────────┼─────────────────────┼───────────────────┼─────────────┼────────
-C0001    │ New  │ ฿ 43.1               │ -  │ 0	0.1525       │ งด (ซื้ออยู่แล้ว)
-C0002      │ Champion  │ ฿ 479.51             │ —                 │ 0	0.4815          │ งด (ซื้ออยู่แล้ว)
-C0003       │ Loyal	     │ ฿  1018.02               │ PR08 (New 30%)    │ 0.8032      │ ✅ ยิงโปร
+customer_id │ segment   │ predicted_spend_30d │ promotion_id      │ redeem_probability │ action
+────────────┼───────────┼─────────────────────┼───────────────────┼────────────────────┼────────
+C0001       │ New       │ ฿ 43.1              │ -                 │ 0	0.1525           │ งด (ซื้ออยู่แล้ว)
+C0002       │ Champion  │ ฿ 479.51            │ —                 │ 0	0.4815           │ งด (ซื้ออยู่แล้ว)
+C0003       │ Loyal	    │ ฿  1018.02          │ PR08 (New 30%)    │ 0.8032             │ ✅ ยิงโปร
 ```
 
 ---
