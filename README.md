@@ -135,7 +135,7 @@ smart-promo-targeting/
 │       ├── transactions_with_segment.csv   ← เป็น Output ของ Notebook 01
 │       ├── rfm_cluster.csv              ← เป็น Output ของ Notebook 02
 │       ├── rfm_with_forecast.csv        ← เป็น Output ของ Notebook 03
-│       └── next_best_offer.csv          ← เป็น Output ของ Notebook 04
+│       └── next_best_offer.csv          ← Final Output (เป็น Output ของ Notebook 04)
 │
 ├── 📁 notebooks/
 │   ├── 01_eda.ipynb                    ← Data Quality + RFM Engineering
