@@ -140,7 +140,10 @@ smart-promo-targeting/
 │   │   
 │   └── processed/                      ← Cleaned data หลัง EDA
 │       ├── rfm_features.csv            ← RFM ที่คำนวณแล้ว
-│       └── transactions_with_segment.csv
+│       ├── transactions_with_segment.csv
+│       ├──
+│       ├──
+│       └──
 │
 ├── 📁 notebooks/
 │   ├── 01_eda.ipynb                    ← Data Quality + RFM Engineering
