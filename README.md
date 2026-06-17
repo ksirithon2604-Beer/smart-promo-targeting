@@ -122,7 +122,9 @@ C0003       │ Loyal	    │ ฿  1018.02          │ PR08 (New 30%)    │ 0.
 ```
 smart-promo-targeting/
 │
+│
 ├── 📄 README.md                        
+│
 │
 ├── 📁 data/
 │   ├── raw/                            ← Mock CSV 5 ไฟล์ (ห้ามแก้ไขเด็ดขาด!!)
@@ -137,22 +139,32 @@ smart-promo-targeting/
 │       ├── rfm_with_forecast.csv        ← เป็น Output ของ Notebook 03
 │       └── next_best_offer.csv          ← Final Output (เป็น Output ของ Notebook 04)
 │
+│
 ├── 📁 notebooks/
 │   ├── 01_eda.ipynb                    ← Data Quality + RFM Engineering
 │   ├── 02_clustering.ipynb             ← K-Means Segmentation
 │   ├── 03_regression.ipynb             ← Revenue Forecast (Ridge)
 │   └── 04_xgboost.ipynb               ← Promotion Classifier + Output
 │
+│
 ├── 📁 diagrams/
 │   ├── solution_workflow.png           ← Pipeline overview
 │   ├── 01_revenue_distribution.png
-│   ├── 01_rfm_distributions.png
-│   ├── 01_rfm_by_segment.png
-│   ├── 01_rfm_correlation.png
-│   └── 01_promo_usage_by_segment.png
+│   ├── 01_Correlation_Heatmap_justifyRidgeRegression.png
+│   ├── 02_Optimal_k_(Elbow + Silhouette).png
+│   ├── 02_Visualize_Segments.png
+│   ├── 02_Validate_vs_True Segment.png
+│   ├── 03_Target_Variable.png
+│   ├── 03_Model_Performance_Charts.png
+│   ├── 03_Feature_Coefficients.png
+│   ├── 04_Model_Evaluation.png
+│   ├── 04_Lift_Curve_vs_Random_Baseline.png
+│   └── 04_Business_Impact.png
+│   
 │
 ├── 📁 docs/
 │   └── data_dictionary.md             ← อธิบาย column ทุกตัวใน 5 ตาราง
+│
 │
 └── 🐍 mock_data.py                    ← Script สร้าง mock data
 ```
