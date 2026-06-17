@@ -60,7 +60,7 @@ C0003       │ Loyal	    │ ฿  1018.02          │ PR08 (New 30%)    │ 0.
 ┌─────────────────────────────────────────────────────────────┐
 │                        INPUT DATA                           │
 │        Sales Transaction  ·  Customer Master                │
-│              Promotion Master  ·  Product Master            │
+│              Promotion Master                               │
 └──────────────────────────────┬──────────────────────────────┘
                                │
                                ▼
