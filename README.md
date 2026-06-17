@@ -130,7 +130,7 @@ C0287       │ New       │ ฿  65               │ PR08 (New 30%)    │ 0.
 ```
 smart-promo-targeting/
 │
-├── 📄 README.md                        ← คุณอยู่ที่นี่
+├── 📄 README.md                        
 │
 ├── 📁 data/
 │   ├── raw/                            ← Mock CSV 5 ไฟล์ (ห้ามแก้ไขเด็ดขาด!!)
@@ -139,11 +139,11 @@ smart-promo-targeting/
 │   │   └── promotion_master.csv        (10 promotions)
 │   │   
 │   └── processed/                      ← Cleaned data หลัง EDA
-│       ├── rfm_features.csv            ← RFM ที่คำนวณแล้ว
-│       ├── transactions_with_segment.csv
-│       ├──
-│       ├──
-│       └──
+│       ├── rfm_features.csv            ← RFM ที่คำนวณแล้ว (เป็น Output ของ Notebook 01)
+│       ├── transactions_with_segment.csv   ← เป็น Output ของ Notebook 01
+│       ├── rfm_cluster.csv              ← เป็น Output ของ Notebook 02
+│       ├── rfm_with_forecast.csv        ← เป็น Output ของ Notebook 03
+│       └── next_best_offer.csv          ← เป็น Output ของ Notebook 04
 │
 ├── 📁 notebooks/
 │   ├── 01_eda.ipynb                    ← Data Quality + RFM Engineering
@@ -218,28 +218,6 @@ jupyter notebook notebooks/04_xgboost.ipynb
 2. Lift Curve — เปรียบเทียบ targeted vs random promotion
 3. Precision@K — model recommend top-K customers ได้ตรงแค่ไหน
 4. Baseline comparison — Promo ROI ก่อน vs หลังใช้ model
-```
-
----
-
-## 📅 Project Roadmap
-
-```
-Phase 1 — Segment & Predict  (สัปดาห์ 1–2)
-  ✅ EDA + Data Quality Check
-  ✅ RFM Feature Engineering
-  🔄 K-Means Clustering
-  🔄 Ridge Regression Forecast
-
-Phase 2 — Deploy Targeting  (สัปดาห์ 3–4)
-  ⬜ XGBoost Classifier
-  ⬜ Next-Best-Offer Table
-  ⬜ Back-test Validation
-
-Phase 3 — Extend  (Optional)
-  ⬜ Time-Series Forecast component
-  ⬜ A/B Test framework concept
-  ⬜ Mock Dashboard (Streamlit / Power BI)
 ```
 
 ---
