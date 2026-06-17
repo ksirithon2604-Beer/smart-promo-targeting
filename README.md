@@ -21,11 +21,11 @@
 **Final Output:** Next-Best-Offer Table
 
 ```
-customer_id │ segment   │ predicted_spend_30d │ recommended_promo │ redeem_prob │ action
+customer_id │ segment   │ predicted_spend_30d │ promotion_id │ redeem_probability │ action
 ────────────┼───────────┼─────────────────────┼───────────────────┼─────────────┼────────
-C0042       │ At-Risk   │ ฿ 180               │ PR06 (Flash 25%)  │ 0.84        │ ✅ ยิงโปร
-C0115       │ Champion  │ ฿ 2,340             │ —                 │ —           │ ⏸ งด
-C0287       │ New       │ ฿  65               │ PR08 (New 30%)    │ 0.61        │ ✅ ยิงโปร
+C0001    │ New  │ ฿ 43.1               │ -  │ 0	0.1525       │ งด (ซื้ออยู่แล้ว)
+C0002      │ Champion  │ ฿ 479.51             │ —                 │ 0	0.4815          │ งด (ซื้ออยู่แล้ว)
+C0003       │ Loyal	     │ ฿  1018.02               │ PR08 (New 30%)    │ 0.8032      │ ✅ ยิงโปร
 ```
 
 ---
