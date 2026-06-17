@@ -1,13 +1,5 @@
 # 🎯 Smart Promotion Targeting Engine
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-2.0-150458?style=flat&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-1.3-F7931E?style=flat&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/XGBoost-2.0-006E9B?style=flat&logo=xgboost&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-In%20Progress-FAEEDA?style=flat&labelColor=BA7517&color=FAEEDA"/>
-</p>
 
 > **ระบบแนะนำโปรโมชันอัจฉริยะสำหรับร้านค้า SME Retail**  
 > ใช้ Customer Segmentation + Revenue Forecast + Promotion Classifier  
