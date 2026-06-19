@@ -40,28 +40,15 @@
 
 | Column Name | Data Type | Example Value | Description / Business Logic |
 | :--- | :--- | :--- | :--- |
+| `transaction_id` | object (String) | `T000001` | รหัสการซื้อขาย |
 | `customer_id` | object (String) | `C0001` | รหัสลูกค้าที่เข้ามาซื้อสินค้า |
 | `transaction_date` | object (Date) | `2024-03-09` | วันที่เกิดการซื้อขาย (สุ่มจำลองช่วงเวลา 6 เดือนของปี 2024) |
 | `subtotal` | float64 | `148.13` | ยอดรวมก่อนหักส่วนลด (สุ่มจากช่วงราคาตามพฤติกรรมของแต่ละ Segment) |
-| `promo_used` | object (String) | `P_NEWYEAR` | รหัสโปรโมชั่นที่ลูกค้าเลือกใช้ในบิลนั้น (`None` คือไม่ใช้โปร) |
+| `promo_id` | object (String) | `P_NEWYEAR` | รหัสโปรโมชั่นที่ลูกค้าเลือกใช้ในบิลนั้น (`None` คือไม่ใช้โปร) |
 | `discount` | float64 | `14.81` | จำนวนเงินส่วนลดที่ได้รับจริงในบิลนั้น (คำนวณตามเงื่อนไขของโปร) |
-| `net_amount` | float64 | `133.32` | ยอดเงินสุทธิที่ลูกค้าจ่ายจริง (`subtotal` - `discount`) |
+| `final_amount` | float64 | `133.32` | ยอดเงินสุทธิที่ลูกค้าจ่ายจริง (`subtotal` - `discount`) |
 
 ---
-
-## 4. customer_features.csv (Processed Data)
-* **ที่อยู่ไฟล์:** `data/processed/customer_features.csv`
-* **จำนวนแถว:** 500 แถว (ตารางที่ยุบรวมเพื่อนำไปป้อนเข้าโมเดล Machine Learning)
-* **Primary Key:** `customer_id`
-
-| Column Name | Data Type | Example Value | Description / Business Logic |
-| :--- | :--- | :--- | :--- |
-| `customer_id` | object (String) | `C0001` | รหัสประจำตัวลูกค้า |
-| `gender` | object (String) | `M` | เพศของลูกค้า |
-| `true_segment` | object (String) | `New` | กลุ่มลูกค้าเดิม |
-| `Recency` | int64 | `12` | จำนวนวันที่เว้นว่างจากการซื้อครั้งล่าสุด นับถึงวันอัปเดตระบบ |
-| `Frequency` | int64 | `14` | จำนวนครั้งรวมทั้งหมดที่ลูกค้ามาซื้อสินค้าภายในรอบ 6 เดือน |
-| `Monetary` | float64 | `12450.50` | ยอดเงินสุทธิสะสมรวมทั้งหมดที่ลูกค้าจ่ายให้ร้านค้าจริง |
 
 ## ⚠️ Known Data Quality Issues
 
